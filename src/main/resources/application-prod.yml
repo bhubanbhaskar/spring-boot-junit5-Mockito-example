@@ -1,0 +1,13 @@
+spring:
+  profiles: prod
+  datasource:
+    url: jdbc:mysql://localhost:3306/author
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
